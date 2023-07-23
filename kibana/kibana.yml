@@ -1,0 +1,19 @@
+---
+server.name: kibana
+server.host: "0.0.0.0"
+
+# Elasticsearch Connection
+elasticsearch.hosts: [ "https://${ELASTICSEARCH_HOST_PORT}" ]
+
+elasticsearch.ssl.verificationMode: none
+elasticsearch.serviceAccountToken: AAEAAWVsYXN0aWMva2liYW5hL3Rva2VuXzlYUExaSWtCdEJrRkktYWxaNFZXOjBPX3o0MUZEU09HZlZIZTBmRV91Z0E
+xpack.encryptedSavedObjects.encryptionKey: "oAkc9nZazxUqu01PrP1DI9JRJ3Ws9phb"
+xpack.security.session.idleTimeout: "1h"
+xpack.security.session.lifespan: "30d"
+server.publicBaseUrl: https://${URLSTACK}
+xpack.reporting.roles.enabled: false
+
+server.ssl.enabled: true
+server.ssl.certificate: /usr/share/elasticsearch/config/file.crt
+server.ssl.key: /usr/share/elasticsearch/config/file.key
+server.ssl.supportedProtocols: ["TLSv1.3"]
