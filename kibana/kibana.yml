@@ -10,7 +10,7 @@ elasticsearch.serviceAccountToken: AAEAAWVsYXN0aWMva2liYW5hL3Rva2VuXzlYUExaSWtCd
 xpack.encryptedSavedObjects.encryptionKey: "oAkc9nZazxUqu01PrP1DI9JRJ3Ws9phb"
 xpack.security.session.idleTimeout: "1h"
 xpack.security.session.lifespan: "30d"
-server.publicBaseUrl: https://${URLSTACK}
+server.publicBaseUrl: https://service.com
 xpack.reporting.roles.enabled: false
 
 server.ssl.enabled: true
